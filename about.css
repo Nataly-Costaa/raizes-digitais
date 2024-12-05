@@ -1,0 +1,141 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header with site name and navigation */
+header {
+    background-color: #004d40;
+    padding: 15px 20px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #044e44;
+    transform: scale(1.1);
+}
+
+/* Split section with colors and image */
+.split-section {
+    position: relative;
+    height: 600px;
+}
+
+.top-section {
+    background-color: #004d40; /* Dark green */
+    height: 50%;
+}
+
+.bottom-section {
+    background-color: black; 
+    height: 50%;
+}
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+}
+
+.image-container img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Text section */
+.text-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: black;
+}
+
+.text-section h2 {
+    color: #004d40;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    color: white;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #004d40;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+}
