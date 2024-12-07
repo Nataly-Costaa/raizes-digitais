@@ -56,14 +56,6 @@
     margin: 0 auto;
 }
 
-/* Footer */
-footer {
-    background-color: var(--color2);
-    color: var(--color3);
-    text-align: center;
-    padding: 15px 0;
-}
-
 
 /* Responsive design */
 @media (max-width: 768px) {
