@@ -52,3 +52,16 @@ header nav a {
 header nav a:hover {
     transform: scale(1.1);
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: var(--color2);
+}
+
+footer p {
+    color: var(--color3);
+    font-size: 1.1rem;
+}
