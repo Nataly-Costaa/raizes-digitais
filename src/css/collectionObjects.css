@@ -1,0 +1,145 @@
+#collectionObjects #sectionNamePage {
+    display: flex;
+    justify-content: end;
+    height: 75vh;
+}
+
+#collectionObjects #namePage {
+    -webkit-text-stroke-width: .2rem;
+    -webkit-text-stroke-color: var(--color2);
+    font-size: 4rem;
+    font-family: Arial, sans-serif;
+}
+
+#collectionObjects #boxNamePage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+#collectionAfro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--color3);
+}
+
+.titleSection {
+    width: 33vw;
+    height: 25vh;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.titleSection span{
+    -webkit-text-stroke-width: .1rem;
+    -webkit-text-stroke-color: var(--color2);
+    color: var(--color1);
+    font-family: Arial, sans-serif;
+}
+
+#collectionAfro #imgAfro1{
+    display: flex;
+    justify-content: space-evenly;
+    height: 97vh;
+}
+
+.titleImg {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+#imgAfro1 .boxText {
+    width: 50vw;
+    height: 38vh;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+#imgAfro1 .boxText .infoBox {
+    width: 50vw;
+    height: 38vh;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.source {
+    font-weight: 600;
+}
+
+#imgAfro1 #boxImg1 {
+    width: 25vw;
+    height: 80vh;
+}
+
+#imgAfro1 #boxImg1 img {
+    width: 25vw;
+    height: 80vh;
+    border-radius: 15px;
+}
+
+#imgAfro2 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 87vh;
+}
+
+#imgAfro2 #infoBox2 #boxText2 {
+    width: 45vw;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    text-align: end;
+}
+
+#imgAfro2 #infoBox2 #source2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 8vh;
+}
+
+#imgAfro2 #boxImg2 img {
+    width: 40vw;
+    height: 65vh;
+    border-radius: 15px;
+}
+
+#imgAfro3 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 120vh;
+}
+
+#imgAfro3 #boxImg3 img {
+    width: 33vw;
+    height: 72vh;
+    border-radius: 15px;
+}
+
+#imgAfro3 #infoBox3 {
+    width: 45vw;
+    height: 50vh;
+}
+
+#imgAfro3 #infoBox3 #boxText3 {
+    width: 45vw;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+#imgAfro3 #infoBox3 #source3 {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+}
+
+
+
+#collectionIndi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--color3);
+}
