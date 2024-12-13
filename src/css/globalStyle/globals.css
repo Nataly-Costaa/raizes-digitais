@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +10,12 @@
 :root {
     --color1: #1E1F21;
     --color2: #5AA082;
-    --color3: #FFFFFF;
+    --color3: #F1F1F1;
+    --color4: #A7A7A7;
+}
+
+li {
+    list-style: none;
 }
 
 body {
@@ -27,11 +32,21 @@ header {
 
 header #logo {
     width: 20vw;
+    font-family: "Public Sans", sans-serif;
 }
 
-header #logo h1{
+header #logo h1 {
     text-align: center;
-    color: var(--color2);
+}
+
+header #logo h1 .logoFirstTxt{
+    text-align: center;
+    color: var(--color3);
+}
+
+header #logo h1 .logoSecondTxt{
+    -webkit-text-stroke: 1px var(--color2);
+    color: transparent;
 }
 
 header nav{
@@ -57,7 +72,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 10vh;
     background-color: var(--color2);
 }
 
