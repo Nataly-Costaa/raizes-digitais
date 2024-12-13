@@ -1,0 +1,205 @@
+#videoContent {
+    font-family: "Public Sans", sans-serif;
+    max-width: min-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#videoContentHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 5rem 0;
+}
+
+.contentHeaderSeparator {
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.contentHeaderSeparator i{
+    color: var(--color2);
+    font-size: 4rem;
+    cursor: pointer;
+} 
+
+.contentHeaderTitle {
+    -webkit-text-stroke: 1px var(--color2);
+    color: transparent;
+    font-size: clamp(67.975px, 4.248rem + ((1vw - 3.2px) * 4.88), 148px);
+}
+
+.contentHeaderDescription {
+    color: var(--color3);
+    font-size: 1.5rem;
+}
+
+#videoContent > section {
+    margin: 2rem;
+}
+
+#videoContent > section > h2 {
+    margin: 2rem 0;
+}
+
+.sectionDescription {
+    color: var(--color4);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sectionFirstTxt {
+    -webkit-text-stroke: 1px var(--color3);
+    color: transparent;
+    font-size: 3rem;
+}
+
+.sectionSecondTxt {
+    color: var(--color3);
+    font-size: 3rem;
+}
+
+.videoCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.videoCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 410px;
+    color: var(--color3);
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+    overflow: hidden;
+}
+
+.videoCard:hover {
+    height: 450px;
+    transition: .5s;
+}
+
+.btnExternal {
+    position: absolute;
+    top: 450px;
+    transition: .5s;
+}
+
+.btnExternal a {
+    font-weight: 500;
+    display: flex;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--color3);
+    border-radius: 1rem;
+    background-color: var(--color2);
+    padding: .5rem;
+}
+
+.videoCard:hover .btnExternal {
+    top: 390px;
+}
+
+.videoCard img {
+    width: 100%;
+    height: calc(400px * (56.25 / 100));
+    border-radius: .5rem .5rem 0 0;
+}
+
+.videoCard .videoCardInfo {
+    padding: .5rem;
+}
+
+.videoCard .videoCardInfo .videoCardTitle {
+    color: var(--color2);
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+}
+
+.videoCard .videoCardInfo .videoCardDescription {
+    font-size: .825rem;
+    text-align: justify;
+    color: var(--color4);
+}
+
+@media screen and (max-width: 1285px) {
+    .videoCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .videoCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #videoContentHeader {
+        gap: 15rem;
+        padding: 1rem 0;
+    }
+
+    .videoCard {
+        height: 450px;
+        justify-content: space-around;
+    }
+
+    .videoCard:hover .btnExternal {
+        top: 0px;
+    }
+    
+    .contentHeaderSeparator {
+        gap: 3rem;
+    }
+    
+    .contentHeaderDescription {
+        color: var(--color3);
+        font-size: 1.2rem;
+    }
+
+    .btnExternal {
+        position: relative;
+        top: 0;
+        transition: 0;
+    }
+
+    .btnExternal a {
+        margin: .5rem;
+        font-weight: 400;
+        font-size: .825rem;
+        gap: .2rem;
+        padding: .2rem .5rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .videoCard {
+        width: 300px;
+        height: 380px;
+        justify-content: space-around;
+    }
+
+    .videoCard:hover {
+        height: 380px;
+        transition: 0;
+    }
+
+    .videoCard img {
+        height: calc(300px * (56.25 / 100));
+    }
+
+    .videoCard .videoCardInfo .videoCardTitle {
+        font-size: .925rem;
+    }
+    
+    .videoCard .videoCardInfo .videoCardDescription {
+        font-size: .725rem;
+    }
+}
