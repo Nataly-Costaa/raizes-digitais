@@ -113,3 +113,26 @@ main, section, .collaboratorsDescription, .collaboratorsName, .cargo {
         text-align: center;
     }
 }
+@media (max-width: 480px) {
+    .collaboratorsTittle {
+        font-size: 40px; 
+    }
+
+    .collaboratorsSubTittle {
+        font-size: 20px; 
+    }
+
+    .collaboratorsSubTittle span {
+        font-size: 20px; 
+    }
+
+    .colaborador {
+        flex: 1 1 100%; 
+        margin-bottom: 15px; 
+    }
+
+    .collaborator-btn {
+        font-size: 14px; 
+        padding: 8px 15px; 
+    }
+}
