@@ -83,9 +83,26 @@ body {
 main, section, .collaboratorsDescription, .collaboratorsName, .cargo {
     padding: 10px;
 }
+.colaborador .social-links {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+
+}
+
+.fa-github{
+    color: #2adb5a;
+    transition: color 0.3s ease;
+}
+
+.fa-github:hover {
+    color: #2b8a41;
+}
 
 .fa-linkedin-in {
     color: #2adb5a;
+    transition: color 0.3s ease;
 }
 
 .fa-linkedin-in:hover {
