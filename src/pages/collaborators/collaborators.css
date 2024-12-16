@@ -47,10 +47,18 @@ body {
     box-sizing: border-box; 
     text-align: center; 
 }
+.colaboradores-container .colaborador:nth-child(n+4) {
+    flex: 1 1 calc(25% - 40px);
+    max-width: calc(25% - 40px);
+
+}
 
 .foto {
-    width: 100%; 
-    height: auto;
+    width: 200px;
+    height: 250px;
+     object-fit: cover; 
+    border-radius: 10px; 
+    
 }
 
 .collaborator-btn {
